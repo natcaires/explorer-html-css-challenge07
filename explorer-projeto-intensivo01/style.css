@@ -1,0 +1,242 @@
+* {
+  font-family: 'Mulish', sans-serif;
+  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --color-pink: #B52184;
+  --color-dark-blue: #312D64;
+  --color-blue: #58548d;
+  --color-white: #ffffff;
+}
+
+/* Header styling */
+.explore-page-top__astronaut-img {
+  display: block;
+  max-width: 364px;
+  margin-left: 1.7rem;
+}
+
+.explore-page__h1 {
+  font-size: 3.2rem;
+  font-weight: 900;
+  line-height: 3.5rem;
+  color: var(--color-pink);
+  text-align: center;
+
+}
+
+.explore-page-top__h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  color: var(--color-dark-blue);
+  text-align: center;
+}
+
+.explore-page-top__pink-button {
+  display: block;
+  padding: 35px 0 93px;
+  margin: 0 auto;
+  width: 58px;
+}
+
+
+/* Cards styling */
+#explore-page-middle {
+  background: var(--color-dark-blue);
+  padding: .5rem 0;
+}
+
+.explore-page-middle__card {
+  width: 35rem;
+  margin: 5rem auto;
+  padding: 2.6rem;
+  border-radius: 2rem;
+  background: var(--color-white);
+}
+
+.explore-page-middle__card__planet-img {
+  margin-bottom: 3rem;
+}
+
+.explore-page-middle__card__h2 {
+  font-size: 2.9rem;
+  font-weight: 900;
+  color: var(--color-pink);
+  margin-bottom: 2rem;
+}
+
+.explore-page-middle__card__p {
+  width: 265px;
+  font-size: 1.6rem;
+  color: var(--color-dark-blue);
+}
+
+
+/* Form styling */
+#explore-page-bottom__form {
+  width: 350px;
+  margin: 6.5rem auto;
+}
+
+.form-background-img {
+  max-width: 100vw;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+fieldset{
+  border: none;
+}
+
+#explore-page-bottom__form legend {
+  text-align: left;
+  line-height: 3.5rem;
+  margin-bottom: 4rem;
+}
+
+.explore-page-bottom__form__input label {
+  position: absolute;
+  opacity: 0;
+}
+
+.explore-page-bottom__form__input img {
+  position: absolute;
+  padding: 12px 14px;
+}
+
+.explore-page-bottom__form__input input, textarea{
+  width: 350px;
+  padding: 1.6rem 5rem;
+  margin-bottom: 2.4rem;
+  border: 1.5px solid var(--color-dark-blue);
+  border-radius: 2rem;
+  font-weight: 600;
+  color: var(--color-dark-blue);
+}
+
+.explore-page-bottom__form__input textarea {
+  height: 12.5rem;
+  padding-left: 1.6rem;
+}
+
+.explore-page-bottom__form__button {
+  height: 4.5rem;
+  width: 15rem;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: var(--color-white);
+  background: var(--color-dark-blue);
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+
+/* Footer styling */
+#explore-page__footer {
+  color: var(--color-white);
+  background: var(--color-dark-blue);
+  height: 7.8rem;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media(min-width: 1440px) {
+
+  /* Header styling */
+  header {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+
+  .explore-page-top__astronaut-img {
+    max-width: 720px;
+    max-height: 730px;
+    margin-left: 3rem;
+  }
+
+  .explore-page-top__text-button {
+    margin-top: 30rem;
+  }
+
+  .explore-page__h1 {
+    font-size: 5.8rem;
+    line-height: 7rem;
+    
+  }
+
+  .explore-page-top__h3 {
+    font-size: 3.2rem;
+    text-align: left;
+  }
+
+  .explore-page-top__pink-button {
+    margin-left: 0;
+    margin-top: 18rem;
+  }
+
+  .explore-page-top__pink-button:hover {
+    transform: scale(1.1);
+  }
+
+
+  /* Cards styling*/
+  #explore-page-middle {
+    display: flex;
+    padding: 6.4rem 10rem;
+  }
+
+  .explore-page-middle__card {
+    width: 36rem
+  }
+
+  .explore-page-middle__card__h2 {
+    font-size: 3.5rem;
+  }
+
+  .explore-page-middle__card__p {
+    font-size: 2rem;
+  }
+
+
+  /* Form styling */
+  #explore-page-bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 0;
+  }
+
+  #explore-page-bottom__form {
+    margin: 9rem auto;
+    width: 595px;
+  }
+
+  #explore-page-bottom__form fieldset legend {
+    font-size: 4.2rem;
+  }
+
+  .explore-page-bottom__form__input input, textarea {
+    width: 595px;
+  }
+
+  .form-background-img {
+    height: 615px;
+    position: relative;
+    opacity: 100;
+  }
+
+  .explore-page-bottom__form__button:hover {
+    background: var(--color-blue);
+  }
+}
